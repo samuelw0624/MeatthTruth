@@ -113,7 +113,7 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Lit_Threshold: 1.75
+    - _Lit_Threshold: 2
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
@@ -125,7 +125,7 @@ Material:
     - _ShadingMultiplier: 0.1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
-    - _Softness: 0.25
+    - _Softness: 0.2
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
