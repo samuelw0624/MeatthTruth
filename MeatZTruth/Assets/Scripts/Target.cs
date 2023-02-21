@@ -6,13 +6,13 @@ public class Target : MonoBehaviour
 {
     Rigidbody targetRb;
     ClickerManager cManagerScript;
-    public ParticleSystem explosionParticle;
+    //public ParticleSystem explosionParticle;
 
     float minForce = 13.0f;
     float maxForce = 17.0f;
-    float maxTorque = 10.0f;
-    float xSpawnRange = 4.0f;
-    float ySpawnPos = -3.0f;
+    float maxTorque = 3.0f;
+    float xSpawnRange = 6.0f;
+    float ySpawnPos = -2.5f;
 
     public int pointValue;
     // Start is called before the first frame update
@@ -34,7 +34,7 @@ public class Target : MonoBehaviour
         if (cManagerScript.isGameAvtive)
         {
             Destroy(gameObject);
-            Instantiate(explosionParticle, transform.position, transform.rotation);
+            //Instantiate(explosionParticle, transform.position, transform.rotation);
             cManagerScript.ScoreCount(pointValue);
         }
     }
