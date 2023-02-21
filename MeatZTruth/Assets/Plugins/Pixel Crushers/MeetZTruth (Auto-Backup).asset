@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 935899b62f48ae5498594680ed17d133, type: 3}
-  m_Name: MeetZTruth
+  m_Name: MeetZTruth (Auto-Backup)
   m_EditorClassIdentifier: 
   version: 1
   author: Samuel Wang
@@ -66,7 +66,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 21300000, guid: c7558d73280cffb42a8973e15b3cc069, type: 3}
+    spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
   - id: 2
@@ -88,7 +88,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 21300000, guid: bdabcc0c88400fd4d9c112b0c2417be7, type: 3}
+    spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
   items: []
@@ -112,7 +112,7 @@ MonoBehaviour:
   - id: 1
     fields:
     - title: Title
-      value: Initial Message
+      value: New Conversation 1
       type: 0
       typeString: 
     - title: Description
@@ -207,7 +207,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 72
-        y: 58
+        y: 59
         width: 160
         height: 30
     - id: 1
