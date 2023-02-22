@@ -5,14 +5,13 @@ using UnityEngine.Video;
 
 public class VideoController : MonoBehaviour
 {
+    public GameObject cToughts;
     public VideoPlayer vPlayer1;
-    public VideoPlayer vPlayer2;
     public bool watchedAds;
 
     private void Awake()
     {
         vPlayer1 = vPlayer1.GetComponent<VideoPlayer>();
-        vPlayer2 = vPlayer2.GetComponent<VideoPlayer>();
     }
 
     // Start is called before the first frame update
@@ -24,7 +23,7 @@ public class VideoController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        vPlayer1.loopPointReached += stopVideo;
     }
 
     private void OnMouseDown()
@@ -32,7 +31,12 @@ public class VideoController : MonoBehaviour
         if(!watchedAds)
         {
             vPlayer1.Play();
-            watchedAds = true;
         }
+    }
+    void stopVideo(UnityEngine.Video.VideoPlayer vp)
+    {
+        watchedAds = true;
+        vp.Stop();
+        cToughts.gameObject.SetActive(true);
     }
 }
