@@ -8,7 +8,7 @@ public class VideoController : MonoBehaviour
 {
     public GameObject cToughts;
     public VideoPlayer vPlayer1;
-    public bool watchedAds;
+    static public bool watchedAds;
 
     private void Awake()
     {
