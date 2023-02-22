@@ -38,6 +38,7 @@ public class VideoController : MonoBehaviour
     {
         watchedAds = true;
         DialogueLua.SetVariable("WatchAds", true);
+        DialogueLua.SetVariable("Started", true);
         vp.Stop();
         cToughts.gameObject.SetActive(true);
     }

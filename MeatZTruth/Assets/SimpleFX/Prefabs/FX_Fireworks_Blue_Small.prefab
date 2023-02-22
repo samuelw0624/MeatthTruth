@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 19811986}
   - component: {fileID: 19979870}
   m_Layer: 0
-  m_Name: 'FX_Fireworks_Blue_Small '
+  m_Name: FX_Fireworks_Blue_Small
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

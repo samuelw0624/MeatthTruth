@@ -11,6 +11,8 @@ public class ClickerManager : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI gameOverText;
+    public GameObject rewardText;
+    public Button restartButton;
 
     //public Button restartButtom;
     public GameObject titleScreen;
@@ -33,7 +35,7 @@ public class ClickerManager : MonoBehaviour
     {
         while (isGameAvtive)
         {
-            yield return new WaitForSeconds(spawnRate);
+            yield return new WaitForSeconds(spawnRate/2f);
             int index = Random.Range(0, targets.Count);
             Instantiate(targets[index]);
 
@@ -48,8 +50,20 @@ public class ClickerManager : MonoBehaviour
 
     public void GameOver()
     {
-        gameOverText.gameObject.SetActive(true);
-        //restartButtom.gameObject.SetActive(true);
         isGameAvtive = false;
+        if (score > 100)
+        {
+            scoreText.gameObject.SetActive(false);
+            rewardText.gameObject.SetActive(true);
+        }else
+        {
+            gameOverText.gameObject.SetActive(true);
+            restartButton.gameObject.SetActive(true);
+            //restartButtom.gameObject.SetActive(true);
+        }
+    }
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("Phone Game");
     }
 }

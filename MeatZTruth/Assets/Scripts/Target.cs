@@ -6,7 +6,7 @@ public class Target : MonoBehaviour
 {
     Rigidbody targetRb;
     ClickerManager cManagerScript;
-    //public ParticleSystem explosionParticle;
+    public ParticleSystem explosionParticle;
 
     float minForce = 13.0f;
     float maxForce = 17.0f;
@@ -33,10 +33,15 @@ public class Target : MonoBehaviour
     {
         if (cManagerScript.isGameAvtive)
         {
-            Destroy(gameObject);
-            //Instantiate(explosionParticle, transform.position, transform.rotation);
+            Instantiate(explosionParticle, transform.position, transform.rotation);
             cManagerScript.ScoreCount(pointValue);
+            if (gameObject.CompareTag("Bomb"))
+            {
+                cManagerScript.GameOver();
+            }
+            Destroy(gameObject);
         }
+        
     }
     private void OnTriggerEnter(Collider other)
     {

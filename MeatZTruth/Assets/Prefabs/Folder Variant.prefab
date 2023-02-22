@@ -82,6 +82,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Folder Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e885c114c1e1ed5419059e9ea20cd055,
+        type: 3}
+      propertyPath: m_TagString
+      value: Good
+      objectReference: {fileID: 0}
     - target: {fileID: 2421521627016790089, guid: e885c114c1e1ed5419059e9ea20cd055,
         type: 3}
       propertyPath: m_IsActive
@@ -141,4 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19507e560e590ac439fa62a5f526a3e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionParticle: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
   pointValue: 5
