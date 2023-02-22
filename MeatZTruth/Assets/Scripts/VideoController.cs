@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Video;
+using PixelCrushers.DialogueSystem;
 
 public class VideoController : MonoBehaviour
 {
@@ -17,7 +18,7 @@ public class VideoController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class VideoController : MonoBehaviour
     void stopVideo(UnityEngine.Video.VideoPlayer vp)
     {
         watchedAds = true;
+        DialogueLua.SetVariable("WatchAds", true);
         vp.Stop();
         cToughts.gameObject.SetActive(true);
     }
