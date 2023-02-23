@@ -736,7 +736,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Don't miss any files and avoid bombs. \nScore 250 points to unlock important
+  m_text: "Don't miss any files and avoid bombs. \nScore 200 points to unlock important
     message."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

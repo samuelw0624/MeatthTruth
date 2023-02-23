@@ -51,7 +51,7 @@ public class ClickerManager : MonoBehaviour
     public void GameOver()
     {
         isGameAvtive = false;
-        if (score > 100)
+        if (score > 200)
         {
             scoreText.gameObject.SetActive(false);
             rewardText.gameObject.SetActive(true);
