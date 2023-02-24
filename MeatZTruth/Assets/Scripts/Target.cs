@@ -10,7 +10,7 @@ public class Target : MonoBehaviour
 
     float minForce = 13.0f;
     float maxForce = 17.0f;
-    float maxTorque = 3.0f;
+    float maxTorque = 1.5f;
     float xSpawnRange = 6.0f;
     float ySpawnPos = -2.5f;
 

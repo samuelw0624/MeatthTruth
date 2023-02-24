@@ -35,7 +35,7 @@ public class ClickerManager : MonoBehaviour
     {
         while (isGameAvtive)
         {
-            yield return new WaitForSeconds(spawnRate/2f);
+            yield return new WaitForSeconds(spawnRate);
             int index = Random.Range(0, targets.Count);
             Instantiate(targets[index]);
 
@@ -51,7 +51,7 @@ public class ClickerManager : MonoBehaviour
     public void GameOver()
     {
         isGameAvtive = false;
-        if (score > 200)
+        if (score > 150)
         {
             scoreText.gameObject.SetActive(false);
             rewardText.gameObject.SetActive(true);

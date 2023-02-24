@@ -3,7 +3,17 @@ guid: 6e67c66536776294f9b923b518d55a5c
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: folder_full
+    second: {fileID: 2100000, guid: c1e4adf447ace704e8abd8bd23943679, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paper1
+    second: {fileID: 2100000, guid: 92817da8f45cd2147942c1c92967f77f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -47,7 +57,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
