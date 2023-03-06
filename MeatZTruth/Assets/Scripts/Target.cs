@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    Rigidbody targetRb;
     ClickerManager cManagerScript;
+    Rigidbody targetRb;
     public ParticleSystem explosionParticle;
 
-    float minForce = 13.0f;
-    float maxForce = 17.0f;
-    float maxTorque = 1.5f;
-    float xSpawnRange = 6.0f;
-    float ySpawnPos = -2.5f;
+    [SerializeField] float minForce = 13.0f;
+    [SerializeField] float maxForce = 17.0f;
+    [SerializeField] float maxTorque = 1.5f;
+    [SerializeField] float xSpawnRange = 6.0f;
+    [SerializeField] float ySpawnPos = -2.5f;
 
     public int pointValue;
     // Start is called before the first frame update
@@ -23,9 +23,7 @@ public class Target : MonoBehaviour
         cManagerScript = GameObject.Find("Clicker Manager").GetComponent<ClickerManager>();
 
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
-
         targetRb.AddTorque(TorqueRange(), TorqueRange(), TorqueRange(), ForceMode.Impulse);
-
         transform.position = SpawnPos();
     }
 
@@ -43,6 +41,7 @@ public class Target : MonoBehaviour
         }
         
     }
+
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
@@ -51,6 +50,7 @@ public class Target : MonoBehaviour
             cManagerScript.GameOver();
         }
     }
+
     Vector3 RandomForce()
     {
         return Vector3.up * Random.Range(minForce, maxForce);

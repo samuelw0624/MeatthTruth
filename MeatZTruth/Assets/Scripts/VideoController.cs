@@ -34,7 +34,7 @@ public class VideoController : MonoBehaviour
             vPlayer1.Play();
         }
     }
-    void stopVideo(UnityEngine.Video.VideoPlayer vp)
+    void stopVideo(VideoPlayer vp)
     {
         watchedAds = true;
         DialogueLua.SetVariable("WatchAds", true);

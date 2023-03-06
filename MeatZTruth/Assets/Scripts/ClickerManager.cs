@@ -7,15 +7,15 @@ using UnityEngine.UI;
 
 public class ClickerManager : MonoBehaviour
 {
+    //public Button restartButtom;
+    public GameObject titleScreen;
+
     public List<GameObject> targets;
 
     public TextMeshProUGUI scoreText;
-    public TextMeshProUGUI gameOverText;
     public GameObject rewardText;
+    public TextMeshProUGUI gameOverText;
     public Button restartButton;
-
-    //public Button restartButtom;
-    public GameObject titleScreen;
 
     int score;
     public bool isGameAvtive;
@@ -23,6 +23,7 @@ public class ClickerManager : MonoBehaviour
 
     public void StartGame()
     {
+        //game initialization
         isGameAvtive = true;
         score = 0;
 
@@ -59,11 +60,10 @@ public class ClickerManager : MonoBehaviour
         {
             gameOverText.gameObject.SetActive(true);
             restartButton.gameObject.SetActive(true);
-            //restartButtom.gameObject.SetActive(true);
         }
     }
     public void RestartGame()
     {
-        SceneManager.LoadScene("Phone Game");
+        SceneManager.LoadScene("Book Game");
     }
 }

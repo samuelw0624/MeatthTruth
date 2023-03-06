@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Room.unity
     guid: 01a0447ea553a044584356e3a7cb2d8f
   - enabled: 1
-    path: Assets/Scenes/Phone Game.unity
+    path: Assets/Scenes/Book Game.unity
     guid: 5bb3fd9265d554040ab1b82e5e3c7b3e
   - enabled: 1
-    path: Assets/Scenes/Cabinet Game.unity
+    path: Assets/Scenes/Phone Game.unity
     guid: 1739cabf343411c45ae310840c2778fb
   m_configObjects: {}
