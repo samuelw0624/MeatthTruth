@@ -13,20 +13,23 @@ public class ClickerManager : MonoBehaviour
     public List<GameObject> targets;
 
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI lifeText;
     public GameObject rewardText;
     public TextMeshProUGUI gameOverText;
     public Button restartButton;
 
     int score;
+    public int life;
     public bool isGameAvtive;
-    float spawnRate = 1.0f;
+    float spawnRate = 1.5f;
 
     public void StartGame()
     {
         //game initialization
         isGameAvtive = true;
         score = 0;
-
+        //life = 3;
+        lifeText.text = "Lives Remaining: " + life;
         StartCoroutine(SpawnTarget());
         //deactivates the title screen when the game starts
         titleScreen.gameObject.SetActive(false);
@@ -36,7 +39,7 @@ public class ClickerManager : MonoBehaviour
     {
         while (isGameAvtive)
         {
-            yield return new WaitForSeconds(spawnRate);
+            yield return new WaitForSeconds(spawnRate/((score/100)+1));
             int index = Random.Range(0, targets.Count);
             Instantiate(targets[index]);
 
@@ -49,10 +52,16 @@ public class ClickerManager : MonoBehaviour
         scoreText.text = "Score: " + score;
     }
 
+    public void DeductLife()
+    {
+        life -= 1;
+        lifeText.text = "Lives Remaining: " + life;
+    }
+
     public void GameOver()
     {
         isGameAvtive = false;
-        if (score > 150)
+        if (score > 250)
         {
             scoreText.gameObject.SetActive(false);
             rewardText.gameObject.SetActive(true);

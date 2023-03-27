@@ -45,7 +45,11 @@ public class Target : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Destroy(gameObject);
-        if (gameObject.CompareTag("Good"))
+        if (gameObject.CompareTag("Good") && cManagerScript.life >= 0)
+        {
+            cManagerScript.DeductLife();
+        }
+        if (cManagerScript.life == 0)
         {
             cManagerScript.GameOver();
         }
