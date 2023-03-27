@@ -45,6 +45,7 @@ public class OutlineSelect : MonoBehaviour
             else
             {
                 highlight = null;
+                selection = null;
             }
         }
 
@@ -60,14 +61,6 @@ public class OutlineSelect : MonoBehaviour
                 selection = raycastHit.transform;
                 selection.gameObject.GetComponent<Outline>().enabled = true;
                 highlight = null;
-            }
-            else
-            {
-                if (selection)
-                {
-                    selection.gameObject.GetComponent<Outline>().enabled = false;
-                    selection = null;
-                }
             }
         }
     }
