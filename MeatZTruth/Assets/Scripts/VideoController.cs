@@ -25,6 +25,10 @@ public class VideoController : MonoBehaviour
     void Update()
     {
         vPlayer1.loopPointReached += stopVideo;
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            skipVideo();
+        }
     }
 
     private void OnMouseDown()
@@ -41,5 +45,10 @@ public class VideoController : MonoBehaviour
         DialogueLua.SetVariable("Started", true);
         vp.Stop();
         cToughts.gameObject.SetActive(true);
+    }
+
+    void skipVideo()
+    {
+        vPlayer1.Stop();
     }
 }
