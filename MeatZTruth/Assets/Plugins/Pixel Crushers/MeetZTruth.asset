@@ -2627,7 +2627,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Research some where else/
+        value: Research some where else
         type: 0
         typeString: 
       - title: Sequence
@@ -2857,7 +2857,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
+        x: 31
         y: 120
         width: 160
         height: 30

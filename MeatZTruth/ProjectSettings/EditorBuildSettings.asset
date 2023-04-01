@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Phone Game.unity
     guid: 1739cabf343411c45ae310840c2778fb
+  - enabled: 1
+    path: Assets/Scenes/TitlePage.unity
+    guid: f88fe2971acfb5e43bdb54f18d8bd3a3
   m_configObjects: {}
