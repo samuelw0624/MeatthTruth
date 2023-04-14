@@ -1057,7 +1057,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: LoadLevel(Cabinet Game)
+        value: LoadLevel(Phone Game)
+        type: 0
+        typeString: 
+      - title: Response Menu Sequence
+        value: 
         type: 0
         typeString: 
       conversationID: 2
@@ -1707,7 +1711,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: LoadLevel(Phone Game)
+        value: LoadLevel(Book Game)
         type: 0
         typeString: 
       conversationID: 4
