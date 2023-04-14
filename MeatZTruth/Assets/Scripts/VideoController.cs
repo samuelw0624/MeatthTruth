@@ -9,6 +9,7 @@ public class VideoController : MonoBehaviour
     public GameObject cToughts;
     public VideoPlayer vPlayer1;
     static public bool watchedAds;
+    public AudioSource BGM;
 
     private void Awake()
     {
@@ -18,7 +19,7 @@ public class VideoController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        BGM = GameObject.Find("BGM").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -36,6 +37,7 @@ public class VideoController : MonoBehaviour
         if(!watchedAds)
         {
             vPlayer1.Play();
+            BGM.Pause();
         }
     }
     void stopVideo(VideoPlayer vp)
@@ -45,6 +47,7 @@ public class VideoController : MonoBehaviour
         DialogueLua.SetVariable("Started", true);
         vp.Stop();
         cToughts.gameObject.SetActive(true);
+        BGM.Play();
     }
 
     void skipVideo()

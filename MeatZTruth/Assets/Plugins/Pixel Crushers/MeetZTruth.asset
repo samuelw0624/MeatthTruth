@@ -66,7 +66,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 21300000, guid: c7558d73280cffb42a8973e15b3cc069, type: 3}
+    spritePortrait: {fileID: 21300000, guid: 238c3760ae2c58a459fe296cfddcca2e, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 2

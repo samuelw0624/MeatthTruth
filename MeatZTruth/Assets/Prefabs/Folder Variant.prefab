@@ -147,4 +147,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 19860484, guid: 6586ff0f14125534cae2f5d8f04b7871, type: 3}
+  clickSound: {fileID: 8300000, guid: d2421b1abc7e75c4793fbfd1d4efdb64, type: 3}
+  minForce: 13
+  maxForce: 17
+  maxTorque: 1.5
+  xSpawnRange: 6
+  ySpawnPos: -2.5
   pointValue: 5

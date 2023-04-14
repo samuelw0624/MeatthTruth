@@ -7,6 +7,9 @@ public class Target : MonoBehaviour
     ClickerManager cManagerScript;
     Rigidbody targetRb;
     public ParticleSystem explosionParticle;
+    public AudioSource audioS;
+    public AudioClip clickSound;
+    public AudioClip explode;
 
     [SerializeField] float minForce = 13.0f;
     [SerializeField] float maxForce = 17.0f;
@@ -25,17 +28,21 @@ public class Target : MonoBehaviour
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
         targetRb.AddTorque(TorqueRange(), TorqueRange(), TorqueRange(), ForceMode.Impulse);
         transform.position = SpawnPos();
+
+        audioS = GameObject.Find("AudioS").GetComponent<AudioSource>();
     }
 
     private void OnMouseDown()
     {
         if (cManagerScript.isGameAvtive)
         {
+            audioS.PlayOneShot(clickSound, 1);
             Instantiate(explosionParticle, transform.position, transform.rotation);
             cManagerScript.ScoreCount(pointValue);
             if (gameObject.CompareTag("Bomb"))
             {
                 cManagerScript.GameOver();
+                audioS.PlayOneShot(explode, 1);
             }
             Destroy(gameObject);
         }

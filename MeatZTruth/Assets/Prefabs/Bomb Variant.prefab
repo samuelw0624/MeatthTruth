@@ -122,4 +122,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 19821056, guid: 079954accd64b32419ec069129c81273, type: 3}
+  audioS: {fileID: 0}
+  clickSound: {fileID: 0}
+  explode: {fileID: 8300000, guid: 6dcb493664b15204bbbf1b81e09d675a, type: 3}
+  minForce: 13
+  maxForce: 17
+  maxTorque: 1.5
+  xSpawnRange: 6
+  ySpawnPos: -2.5
   pointValue: -10
