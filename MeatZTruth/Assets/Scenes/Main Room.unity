@@ -430,30 +430,6 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 354d83e1bb885f4409cc01eb6ccf87a5, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 297f9701b65c45644ab6953740452d1f, type: 3}
---- !u!1 &970868262 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 297f9701b65c45644ab6953740452d1f,
-    type: 3}
-  m_PrefabInstance: {fileID: 970868261}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &970868263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 970868262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 0
-  outlineColor: {r: 1, g: 0, b: 0, a: 1}
-  outlineWidth: 2
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
 --- !u!1 &1265555843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,6 +1519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cToughts: {fileID: 1434677068}
   vPlayer1: {fileID: 1265555844}
+  BGM: {fileID: 0}
 --- !u!114 &8717312888895088939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1704,3 +1681,21 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   debug: 0
+--- !u!114 &8717312888895088946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3239839239424402855}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 0
+  outlineColor: {r: 1, g: 0, b: 0.70727015, a: 1}
+  outlineWidth: 2
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []

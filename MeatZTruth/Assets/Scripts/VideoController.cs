@@ -52,6 +52,11 @@ public class VideoController : MonoBehaviour
 
     void skipVideo()
     {
+        watchedAds = true;
+        DialogueLua.SetVariable("WatchAds", true);
+        DialogueLua.SetVariable("Started", true);
         vPlayer1.Stop();
+        cToughts.gameObject.SetActive(true);
+        BGM.Play();
     }
 }
