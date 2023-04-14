@@ -102,7 +102,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 42
+  controlID: 158
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 111
+  controlID: 148
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 61
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 62
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -385,15 +385,15 @@ MonoBehaviour:
   actorFoldouts:
     propertiesKeys: 
     propertiesValues: 
-    fieldsKeys: 
-    fieldsValues: 
+    fieldsKeys: 000000000100000002000000
+    fieldsValues: 000000
   actorFilter: 
   hideFilteredOutActors: 0
-  actorListSelectedIndex: -1
+  actorListSelectedIndex: 0
   actorTexturesFoldout: 0
-  actorSpritesFoldout: 0
+  actorSpritesFoldout: 1
   showNodeEditor: 1
-  currentConversationID: 7
+  currentConversationID: 2
   globalSearchText: 
   globalReplaceText: 
   globalSearchSpecificConversation: 0
@@ -429,7 +429,7 @@ MonoBehaviour:
   isSearchBarOpen: 0
   searchString: 
   searchCaseSensitive: 0
-  currentEntryID: 2
+  currentEntryID: 3
   itemFoldouts:
     propertiesKeys: 
     propertiesValues: 
@@ -484,7 +484,7 @@ MonoBehaviour:
   watches: []
   autoUpdateWatches: 0
   watchUpdateFrequency: 1
-  nextWatchUpdateTime: 2987.6802301
+  nextWatchUpdateTime: 5480.574706699999
   watchableVariableNames:
   - Actor
   - ActorIndex
@@ -521,7 +521,7 @@ MonoBehaviour:
   - TV
   - Reward Message
   - After clicking TV
-  conversationIndex: 6
+  conversationIndex: 1
   snapToGridAmount: 0
   confirmDelete: 1
   trimWhitespaceAroundPipes: 1
@@ -539,6 +539,8 @@ MonoBehaviour:
   - Cabinet
   - TV
   - Reward Message
+  - After clicking TV
+  - Cabinet
   nextConversationStack: []
 --- !u!114 &16
 MonoBehaviour:
@@ -611,36 +613,36 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Plugins/Pixel Crushers
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Plugins/Pixel Crushers
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Game_Design_3A\Game39750_Advanced Programming\Card_Game\MeetZTruth\MeatthTruth\MeatZTruth
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2c8d0000
-    m_LastClickedID: 36140
-    m_ExpandedIDs: 000000001a8d00001c8d00001e8d0000208d0000228d0000248d0000268d0000288d00002a8d00002c8d00005c8f0000b68f000000ca9a3b
+    scrollPos: {x: 0, y: 610}
+    m_SelectedIDs: a8840000
+    m_LastClickedID: 33960
+    m_ExpandedIDs: 0000000096820000988200009a8200009c8200009e820000a0820000a2820000a4820000a6820000a8820000968400009c840000b2840000c0840000e49900006e9a0000709a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Documentation
-      m_OriginalName: Documentation
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 36786
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 3}
     m_SearchString: 
@@ -654,7 +656,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001a8d00001c8d00001e8d0000208d0000228d0000248d0000268d0000288d00002a8d00002c8d0000
+    m_ExpandedIDs: 0000000096820000988200009a8200009c8200009e820000a0820000a2820000a4820000a6820000a8820000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -786,18 +788,18 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 9028fdff6629fdff8c32fdff9e32fdffae32fdffb434fdff3446fdff5471fdff5671fdffae7efdff6485fdffd488fdffa27cfeff3e0affff90aaffff92ceffffa4d0ffff7cd3ffffe8faffffa6940000d6940000da940000
+      m_ExpandedIDs: b298fcff8a99fcff8ea2fcff9ea2fcffa2a4fcffa6a4fcff0a64fdffde64fdfff864fdff0665fdff1265fdff0267fdff1277fdffe677fdff0c81fdff1e81fdff2e81fdff3483fdffb287fdffb2b5fdffe8cdfdff0a63ffff8a81ffffecadffff04afffff42b3ffff64b4ffff6cc3ffff66c4ffff98c6ffffe8faffff629c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Text
-        m_OriginalName: Text
+        m_Name: Portrait Image
+        m_OriginalName: Portrait Image
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 39868
+        m_UserData: 52172
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -899,7 +901,7 @@ MonoBehaviour:
       floating: 0
       collapsed: 0
       displayed: 1
-      snapOffset: {x: 0, y: 0}
+      snapOffset: {x: 0, y: 25}
       snapOffsetDelta: {x: 0, y: 0}
       snapCorner: 0
       id: unity-transform-toolbar
@@ -1047,9 +1049,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1.7469077, y: 0.79372454, z: 0.6758843}
+    m_Target: {x: 380, y: 214, z: 0}
     speed: 2
-    m_Value: {x: 1.7469077, y: 0.79372454, z: 0.6758843}
+    m_Value: {x: 380, y: 214, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1096,13 +1098,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.3167564, y: 0.48633292, z: -0.19478986, w: 0.79072654}
+    m_Target: {x: 0.016466912, y: 0.06385042, z: -0.0010229698, w: 0.9978549}
     speed: 2
-    m_Value: {x: 0.31674916, y: 0.4863218, z: -0.1947854, w: 0.7907084}
+    m_Value: {x: 0.016467907, y: 0.06235159, z: -0.0009982367, w: 0.9979179}
   m_Size:
-    m_Target: 1.0423695
+    m_Target: 323.79932
     speed: 2
-    m_Value: 1.0423695
+    m_Value: 339.0569
   m_Ortho:
     m_Target: 0
     speed: 2
